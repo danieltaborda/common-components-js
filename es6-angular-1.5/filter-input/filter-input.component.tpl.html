@@ -1,0 +1,6 @@
+<div class="filter-component">
+    <input ng-keypress="$ctrl.keyPressed($event)" ng-model="$ctrl.queryParams" placeholder="{{ $ctrl.placeholder }}">
+    <div class="button reset" ng-if="$ctrl.isResetFilterActive()" ng-click="$ctrl.resetButton()">
+        <ng-transclude></ng-transclude>
+    </div>
+</div>
